@@ -1,0 +1,226 @@
+/* login.css */
+/* login.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Inter Fallback', sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+/* Page container */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Logo */
+.mysage-logo {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin-top: -10px;
+  margin-bottom: -5px; /* Reduced gap */
+}
+
+/* POWERED BY text */
+.powered-by-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8bc53d;
+  align-self: flex-end;
+  margin-top: 4px;
+  margin-right: -110px;
+  text-align: center;
+  width: 100%;
+}
+
+.login-logo-img {
+  width: 60%;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-left: 75px;
+}
+
+
+/* Green login box */
+.login-box {
+  background-color: #8bc53d;
+  width: 100%;
+  max-width: 420px;
+  margin-top: 35px;
+  padding: 30px 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title in login box */
+.login-heading {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Form container */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+.login-box label {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: -10px;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  color: white !important;
+}
+
+/* Logo wrapper - to control alignment of logo + powered by */
+.logo-wrapper {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* ✅ center logo */
+  position: relative;
+}
+
+
+/* Login button */
+.login-btn {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 15px;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #f3f3f3;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 480px) {
+  .mysage-logo {
+    max-width: 200px;
+  }
+
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-heading {
+    font-size: 18px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  width: 100%;
+}
+
+.password-visibility-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 0;
+  color: #999; /* subtle like placeholder */
+}
+
+.password-visibility-btn:hover {
+  color: #666;
+}
+
+.password-visibility-btn:focus {
+  outline: 2px solid #4c9ffe;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.login-box input,
+#zip-input {
+  background: #fff !important;
+  color: #111;
+  border: 1px solid #d1d5db; /* light gray */
+}
+
+.zip-input{
+  align-items: left;
+}
+
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo-bold {
+  font-weight: 600;       /* Demi */
+  color: #ffffff;         /* white text inside green box */
+  letter-spacing: 0.5px;
+}
+
+.logo-light {
+  font-weight: 400;       /* Book */
+  color: #ffffff;
+}
