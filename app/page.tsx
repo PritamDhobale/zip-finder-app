@@ -111,7 +111,6 @@ export default function ZipFinder() {
           </div>
         )}
       </div>
-
       {/* Footer */}
       <div className="powered-by-text">POWERED BY HUBONE SYSTEMS</div>
       <p className="footer-text">© 2014–2026 HubOne Systems Inc. – All Rights Reserved</p>
